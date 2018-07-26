@@ -1,5 +1,5 @@
 #include <iostream>
-
+/* create two stack with the help of one stack only*/
 using namespace std;
 int *STACK;
 int size;
