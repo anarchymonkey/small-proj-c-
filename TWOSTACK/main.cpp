@@ -1,5 +1,12 @@
 #include <iostream>
+/* create two stack with the help of one stack only
+Example:
 
+A STACK SIZE OF N.
+
+the STACK1 will PUSH FROM THE FRONT --> 0 th index if the stack 
+    STACK2 will PUSH FROM THE END --> nth index 
+    */
 using namespace std;
 int *STACK;
 int size;
