@@ -3,7 +3,7 @@ A group of tricky and small projects in c++ contains questions and the solutions
 
 
 EXECUTION METHODS: 
-``
+                                
                                 UBUNTU:
                           
                    STEP 1: IF g++ IS NOT INSTALLED THEN : 
