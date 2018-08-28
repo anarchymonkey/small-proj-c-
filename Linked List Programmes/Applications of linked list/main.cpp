@@ -50,11 +50,11 @@ void OPERATIONS(POLYNOMIAL P1,POLYNOMIAL P2)
 
     if(value1->power == value2->power)
     {
-        cout<<"ADDED CONSTANT IS"<<value1->constants+value2->constants<<"^"<<value1->power<<endl;
+        cout<<"ADDED CONSTANT IS"<<value1->constants+value2->constants<<"x^"<<value1->power<<"+";
     }
-    else{
-        cout<<"THE LEFT OUT ELEMENT IN LIST 1 IS"<<value1->constants<<"^"<<value1->power<<endl;
-         cout<<"THE LEFT OUT ELEMENT IN LIST 2 IS"<<value2->constants<<"^"<<value2->power<<endl;
+    else
+    {
+        cout<<"THE LEFT OUT POLYNOMIALS ARE "<<value1->constants<<"x^"<<value1->power<<" + "<<value2->constants<<"x^"<<value2->power<<endl;
     }
     value1 = value1->next;
     value2= value2->next;
@@ -79,10 +79,8 @@ int main()
 {
     int choice,constant,power;
     POLYNOMIAL P1,P2,P3;
-
     cout<<"ENTER\n1.INSERT INTO POLYNOMIAL 1\n2.INSERT INTO POLYNOMIAL 2\n3.DISPLAY BOTH LISTS"<<endl;
     cin>>choice;
-
     while(choice != -1)
     {
         switch(choice)
