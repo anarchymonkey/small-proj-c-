@@ -38,8 +38,6 @@ void INSERT_HEAD(int CONSTANT,int POWER)
 }
 void OPERATIONS(POLYNOMIAL P1,POLYNOMIAL P2)
 {
-    POLYNOMIAL P3;
-
     Node *value1,*value2;
     value1 = P1.head;
     value2 = P2.head;
@@ -112,8 +110,7 @@ int main()
         case 4:
             cout<<"ADDING THE CONSTANTS"<<endl;
             P3.OPERATIONS(P1,P2);
-        default:
-            cout<<"WRONG CHOICE"<<endl;
+            break;
         }
         cout<<"ENTER\n1.INSERT INTO POLYNOMIAL 1\n2.INSERT INTO POLYNOMIAL 2\n3.DISPLAY BOTH LISTS"<<endl;
     cin>>choice;
