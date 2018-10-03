@@ -1,21 +1,19 @@
-#include <math.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <limits.h>
-#include <stdbool.h>
-int main()
-{
-    long long int N,i,sum=0,num=0;
-    long long  int largenumber[10000000000];
-    scanf("%lld",&N);
-    for(i=0;i<N;i++)
-    {
-        scanf("%lld ",&num);
-        largenumber[i]=num;
-        sum+=largenumber[i];
+#include <iostream>
+using namespace std;
+/*
+    *
+    * Prosen Ghosh
+    * American International University - Bangladesh (AIUB)
+    *
+*/
+int main() {
+
+   long long int n,sum = 0;
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        long long int a;cin >> a;
+        sum+=a;
     }
-    printf("%lld",sum);
+    cout << sum << endl;
     return 0;
 }
