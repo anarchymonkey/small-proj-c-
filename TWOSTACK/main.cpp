@@ -9,8 +9,8 @@ the STACK1 will PUSH FROM THE FRONT --> 0 th index if the stack
     */
 using namespace std;
 int *STACK;
-int size;
-int top_front= 0;
+int size = 0;
+int top_front = 0;
 int top_back;
 
 
@@ -37,7 +37,7 @@ int pop_st2()
 int main()
 {
 
-int i = 0;
+    int i = 0;
     int element_front;
     int element_back;
     int choice;
@@ -47,11 +47,11 @@ int i = 0;
     STACK = new int[size];
     top_back=size;
 
-    cout<<"Enter 1. push into stack 1 \n 2. push into stack 2 \n  3.DISPLAY STACK 1 \n 4.DISPLAY STACK 2 \n5.POP STACK 1 \n 6.POP STACK 2"<<endl;
-    cin>>choice;
-
-if(top_front != top_back)
+if (top_front != top_back)
 {
+    cout<<"Enter 1. push into stack 1 \n 2. push into stack 2 \n  3.DISPLAY STACK 1 \n 4.DISPLAY  STACK 2 \n5.POP STACK 1 \n 6.POP STACK 2"<<endl;
+    cin>>choice;
+    
     while(choice != -1 )
     {
         switch(choice)
@@ -70,40 +70,40 @@ if(top_front != top_back)
            pop_first();
            break; */
     case 3:
-                cout<<"ELEMENTS IN STACK 1 ARE"<<endl;
+            cout<<"ELEMENTS IN STACK 1 ARE"<<endl;
             for( int i = 0;i<top_front;i++)
             {
                 cout<<STACK[i]<<endl;
             }
             break;
 
-    case 4: cout<<"TOP BACK IS"<<top_back<<endl;
+    case 4:
+            cout<<"TOP BACK IS"<<top_back<<endl;
             cout<<"ELEMENTS IN STACK 2 ARE"<<endl;
             for( int i = size-1;i>=top_back;i--)
             {
                 cout<<STACK[i]<<endl;
             }
-        break;
+            break;
     case 5:
             cout<<"STACK 1 is being popped"<<endl;
             cout<<"THE POPPED VALUE IS"<<pop_st1()<<endl;
             break;
-        case 6:
+    case 6:
             cout<<"STACK 2 is being popped"<<endl;
             cout<<"THE POPPED VALUE IS"<<pop_st2()<<endl;
             break;
         }
 cout<<"Enter 1. push into stack 1 \n 2. push into stack 2 \n  3.DISPLAY STACK 1 \n 4.DISPLAY STACK 2 \n5.POP STACK 1 \n6.POP STACK 2"<<endl;
 cin>>choice;
-
-
-}
+    }
 }
 else
 {
 
     cout<<"STACK ENDED"<<endl;
 }
-    }
+
+}
 
 
